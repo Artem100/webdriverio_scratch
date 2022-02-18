@@ -1,0 +1,8 @@
+const AddRemoveElementsPage = require('../pageobjects/add_remove_elements.page');
+
+describe('Add element after delete', () => {
+    it('Delete element', async () => {
+        await AddRemoveElementsPage.open();
+        await AddRemoveElementsPage.addThenDeleteButton();
+    });
+});

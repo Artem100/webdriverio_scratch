@@ -1,0 +1,9 @@
+const assert = require('assert');
+
+describe('Check title on main page', () => {
+    it('Get title and assert text', () => {
+        browser.url("https://the-internet.herokuapp.com/");
+        const title = browser.getTitle();
+        assert.strictEqual(title, 'The Internet');
+    });
+});
